@@ -3,9 +3,15 @@
     "version": "2.3.2",
     "description": "Native storage of variables in Android, iOS and Windows",
     "author": "Gilles Callebaut <callebaut.gilles@gmail.com>",
-    "contributors":[
-      {"name":"Alok Rajiv"},
-      {"name":"Yann Deshayes", "email": "deshayes.yann@gmail.com", "url": "https://github.com/ydeshayes"}
+    "contributors": [
+        {
+            "name": "Alok Rajiv"
+        },
+        {
+            "name": "Yann Deshayes",
+            "email": "deshayes.yann@gmail.com",
+            "url": "https://github.com/ydeshayes"
+        }
     ],
     "cordova": {
         "id": "cordova-plugin-nativestorage",
@@ -40,10 +46,11 @@
     ],
     "license": "Apache-2.0",
     "devDependencies": {
-        "jshint": "^2.9.1"
+        "jshint": "^2.9.1",
+        "sync-cordova-xml": "^0.4.0"
     },
-    "bugs":{
-        "url" : "https://github.com/TheCocoaProject/cordova-plugin-nativestorage/issues"
+    "bugs": {
+        "url": "https://github.com/TheCocoaProject/cordova-plugin-nativestorage/issues"
     },
     "homepage": "https://github.com/TheCocoaProject/cordova-plugin-nativestorage#README.md"
 }

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-nativestorage"
-    version="2.3.2">
-    <name>NativeStorage</name>
-    <description>Native storage of variables in Android and iOS</description>
-    <license>Apache 2.0</license>
-    <keywords>cordova, native storage, LocalStorage, NSUserDefaults, SharedPreferences</keywords>
-    <repo></repo>
-    <issue></issue>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-nativestorage" version="2.3.2">
+    <name>cordova-plugin-nativestorage</name>
+    <description>Native storage of variables in Android, iOS and Windows</description>
+    <license>Apache-2.0</license>
+    <keywords>cordova,device,storage,ecosystem:cordova,cordova-android,cordova-ios,cordova-browser,cordova-windows,LocalStorage,NSUserDefaults,SharedPreferences</keywords>
+    <repo>https://github.com/TheCocoaProject/cordova-plugin-nativestorage</repo>
+    <issue>https://github.com/TheCocoaProject/cordova-plugin-nativestorage/issues</issue>
 
     <js-module src="www/mainHandle.js" name="mainHandle">
-        <clobbers target="NativeStorage" />
+        <clobbers target="NativeStorage"/>
     </js-module>
     <js-module src="www/LocalStorageHandle.js" name="LocalStorageHandle">
     </js-module>
@@ -25,8 +22,8 @@
                 <param name="android-package" value="NativeStorage"/>
             </feature>
         </config-file>
-        <source-file src="src/android/NativeStorage.java" target-dir="src/" />
-        <source-file src="src/android/Crypto.java" target-dir="src/" />
+        <source-file src="src/android/NativeStorage.java" target-dir="src/"/>
+        <source-file src="src/android/Crypto.java" target-dir="src/"/>
     </platform>
 
 
@@ -45,7 +42,7 @@
     <platform name="browser">
         <config-file target="config.xml" parent="/*">
             <feature name="NativeStorage">
-                <param name="browser-package" value="NativeStorage" />
+                <param name="browser-package" value="NativeStorage"/>
             </feature>
         </config-file>
     </platform>
@@ -54,7 +51,7 @@
     <platform name="osx">
         <config-file target="config.xml" parent="/*">
             <feature name="NativeStorage">
-                <param name="osx-package" value="NativeStorage" />
+                <param name="osx-package" value="NativeStorage"/>
             </feature>
         </config-file>
     </platform>
@@ -62,9 +59,8 @@
     <!-- windows -->
     <platform name="windows">
         <js-module src="src/windows/NativeStorage.js" name="NativeStorage">
-            <runs />
+            <runs/>
         </js-module>
     </platform>
-
-
+    <author email="callebaut.gilles@gmail.com">Gilles Callebaut</author>
 </plugin>
