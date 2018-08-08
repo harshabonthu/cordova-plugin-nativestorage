@@ -359,7 +359,11 @@ StorageHandle.prototype.setItem = function(reference, obj, success, error) {
 
   var objAsString = "";
   try {
-    objAsString = JSON.stringify(obj);
+    if (typeof obj === 'string') {
+      objAsString = obj;
+    } else {
+      objAsString = JSON.stringify(obj);
+    }
   } catch (err) {
     error(new NativeStorageError(NativeStorageError.JSON_ERROR, "JS", err));
     return;
