@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-nativestorage",
-    "version": "2.3.2",
+    "version": "2.3.3-0",
     "description": "Native storage of variables in Android, iOS and Windows",
     "author": "Gilles Callebaut <callebaut.gilles@gmail.com>",
     "contributors": [
@@ -29,7 +29,8 @@
     },
     "scripts": {
         "test": "npm run jshint",
-        "jshint": "jshint www && jshint tests"
+        "jshint": "jshint www && jshint tests",
+        "version": "sync-cordova-xml package.json plugin.xml --output plugin.xml && git add plugin.xml"
     },
     "keywords": [
         "cordova",
